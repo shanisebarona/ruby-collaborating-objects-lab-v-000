@@ -30,9 +30,7 @@ class Artist
   end
   
   def print_songs
-    
-    puts @songs.name
-    binding.pry
+    @songs.each { |song| puts song.name}
   end
 
   def add_song(song)
